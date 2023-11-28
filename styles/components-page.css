@@ -1,3 +1,6 @@
 @import url(nullstyle.css);
 @import url(components.css);
 
+.section-typography {
+    margin-bottom: 50px;
+}

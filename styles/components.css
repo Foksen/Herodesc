@@ -2,22 +2,28 @@
 
 * {
     --SB-Normal: #827AE9;
+    --SB-Normal-Hover: #756ED2;
+    --SB-Normal-Active: #6862BA;
     --S0: #FFFFFF;
     --S30: #EBEBED;
+    --S300: #5E5D68;
+    --S500: #43424F;
+    --S600: #373643;
     --S650: #2E2D39;
+    --S700: #262533;
 }
 
 /* Typography */
 
 * {
     font-family: 'Inter', sans-serif !important;
-    color: var(--S0);
-    line-height: 1.25 !important;
-    background-color: var(--S650);
 }
 
 body {
     font-size: 16px;
+    color: var(--S0);
+    line-height: 1.25;
+    background-color: var(--S650);
 }
 
 h1 {
@@ -60,4 +66,65 @@ p {
     font-size: 1.125em;
     font-weight: 300;
     color: var(--S30);
+}
+
+/* Buttons */
+
+button {
+    padding: 1em 2em;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--S0);
+    border-radius: 0.15em;
+    background-color: var(--S500);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+button:hover {
+    background-color: var(--S600);
+}
+
+button:active {
+    background-color: var(--S700);
+}
+
+.btn-outline {
+    padding-top: calc(1em - 2px);
+    padding-bottom: calc(1em - 2px);
+    padding-right: calc(2em - 2px);
+    padding-left: calc(2em - 2px);
+    color: var(--SB-Normal);
+    border: 2px solid var(--SB-Normal);
+    background-color: transparent;
+    transition: color 0.15s, border 0.15s;
+}
+
+.btn-outline:hover {
+    color: var(--SB-Normal-Hover);
+    border-color: var(--SB-Normal-Hover);
+}
+
+.btn-outline:active {
+    color: var(--SB-Normal-Active);
+    border-color: var(--SB-Normal-Active);
+}
+
+.btn-color {
+    background-color: var(--SB-Normal);
+}
+
+.btn-color:hover {
+    background-color: var(--SB-Normal-Hover);
+}
+
+.btn-color:active {
+    background-color: var(--SB-Normal-Active);
+}
+
+button:disabled {
+    background-color: var(--S300);
+    cursor: default;
 }
