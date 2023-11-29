@@ -1,6 +1,11 @@
 @import url(nullstyle.css);
 @import url(components.css);
 
-.section-typography {
-    margin-bottom: 50px;
+section {
+    margin: 20px 10% 30px;
+}
+
+.section-inputs .input-container{
+    width: 300px;
+    margin-bottom: 10px;
 }
