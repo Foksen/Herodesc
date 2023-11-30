@@ -17,3 +17,11 @@ section {
 .section-filter .filters {
     width: 300px;
 }
+
+.section-social-networks .social-networks-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    row-gap: 15px;
+    column-gap: 20px;
+}

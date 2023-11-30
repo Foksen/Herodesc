@@ -435,3 +435,32 @@ option {
 .full-logo:hover .full-logo-ninja-animated {
     opacity: 1;
 }
+
+/* Social Networks */
+
+.link-sn {
+    display: inline-block;
+    padding: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: var(--S500);
+    border-radius: 0.15em;
+    transition: background-color 0.15s;
+}
+
+.link-sn-icon {
+    fill: var(--S0);
+    transition: fill 0.15s;
+}
+
+.link-sn:hover {
+    background-color: var(--S600);
+}
+
+.link-sn:hover .link-sn-icon{
+    fill: var(--LG-Normal);
+}
+
+.link-sn:active {
+    background-color: var(--S700);
+}
