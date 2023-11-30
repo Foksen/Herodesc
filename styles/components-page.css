@@ -9,3 +9,11 @@ section {
     width: 300px;
     margin-bottom: 10px;
 }
+
+.section-select .select-container {
+    width: 300px;
+}
+
+.section-filter .filters {
+    width: 300px;
+}
