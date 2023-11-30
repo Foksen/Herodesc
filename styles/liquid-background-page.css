@@ -1,0 +1,76 @@
+@import url(nullstyle.css);
+@import url(components.css);
+
+body {
+    background-image: url(../assets/liquid-background/background.jpg);
+    background-size: 100% 100%;
+}
+
+.liquid-background-blob-container {
+    position: fixed;
+    filter: blur(250px);
+}
+
+#liquid-background-blob-1-container {
+    bottom: -241px;
+    left: -32px;
+    width: 689px;
+    height: 513px;
+}
+
+#liquid-background-blob-2-container {
+    top: -297px;
+    left: -112px;
+    width: 621px;
+    height: 655px;
+}
+
+#liquid-background-blob-3-container {
+    top: -411px;
+    right: -433px;
+    width: 796px;
+    height: 723px;
+}
+
+#liquid-background-blob-4-container {
+    bottom: -148px;
+    right: 39px;
+    width: 482px;
+    height: 420px;
+}
+
+#liquid-background-blob-central-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 762px;
+    height: 795px;
+}
+
+#liquid-background-blob-1 {
+    fill: var(--LG-Normal);
+    opacity: 0.75;
+}
+
+#liquid-background-blob-2 {
+    fill: var(--LG-Normal);
+    opacity: 0.35;
+}
+
+#liquid-background-blob-3 {
+    fill: var(--SB-Normal);
+    opacity: 0.75;
+}
+
+#liquid-background-blob-4 {
+    fill: var(--SB-Normal);
+    opacity: 0.35;
+}
+
+#liquid-background-blob-central {
+    fill: var(--S650);
+}
+
+.liquid-background-blob-container-animated {
+    transition: margin 5s;
+}
