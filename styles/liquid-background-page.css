@@ -72,5 +72,5 @@ body {
 }
 
 .liquid-background-blob-container-animated {
-    transition: margin 5s;
+    transition: margin linear 5s;
 }
