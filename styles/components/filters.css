@@ -1,0 +1,121 @@
+.filter-container {
+    width: 100%;
+}
+
+.filter-label {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    gap: 0.7em;
+}
+
+.filter-checkbox-box {
+    flex-shrink: 0;
+    margin-top: 0.2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.15em;
+    background-color: var(--S500);
+    transition: background-color 0.15s;
+}
+
+.filter-checkbox-icon {
+    margin: 0.125em;
+    fill: var(--S0);
+    transition: opacity 0.15s;
+}
+
+.filter-radiobutton-circle {
+    flex-shrink: 0;
+    margin-top: 0.2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: var(--S500);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: background-color 0.15s, outline-color 0.15s;
+}
+
+.filter-desc {
+    font-size: 1.125em;
+    font-weight: 300;
+    color: var(--S30);
+    transition: color 0.15s;
+    overflow-wrap: anywhere;
+}
+
+.filter-input:not(:checked) + .filter-label .filter-checkbox-icon {
+    opacity: 0;
+}
+
+.filter-label:hover .filter-checkbox-box {
+    background-color: var(--S600);
+}
+
+.filter-label:hover .filter-radiobutton-circle {
+    background-color: var(--S600);
+}
+
+.filter-input:checked + .filter-label .filter-checkbox-box {
+    background-color: var(--S700);
+}
+
+.filter-input:checked + .filter-label .filter-radiobutton-circle {
+    background-color: var(--S700);
+    outline-color: var(--S0);
+}
+
+.filter-input:checked + .filter-label .filter-desc {
+    color: var(--S0);
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+    padding: 0.25px 0;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.filter-list::-webkit-scrollbar {
+    width: 3px;
+    background-color: var(--S500);
+}
+
+.filter-list::-webkit-scrollbar-thumb {
+    background-color: var(--S700);
+}
+
+.filter-title {
+    margin-bottom: 0.75em;
+    overflow-wrap: break-word;
+}
+
+.filter-expansion {
+    margin-top: 1em;
+}
+
+.filter-expansion-label {
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--SB-Normal);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s;
+}
+
+.filter-expansion-label:hover {
+    color: var(--SB-Normal-Hover);
+}
+
+.filter-expansion-label:active {
+    color: var(--SB-Normal-Active);
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}

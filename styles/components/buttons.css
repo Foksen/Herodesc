@@ -1,0 +1,55 @@
+.btn-type1 {
+    padding: 1em 2em;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--S0);
+    border-radius: 0.15em;
+    background-color: var(--S500);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.btn-type1:hover {
+    background-color: var(--S600);
+}
+
+.btn-type1:active {
+    background-color: var(--S700);
+}
+
+.btn-outline {
+    color: var(--SB-Normal);
+    outline: 2px solid var(--SB-Normal);
+    outline-offset: -2px;
+    background-color: transparent;
+    transition: color 0.15s, outline-color 0.15s;
+}
+
+.btn-outline:hover {
+    color: var(--SB-Normal-Hover);
+    outline-color: var(--SB-Normal-Hover);
+}
+
+.btn-outline:active {
+    color: var(--SB-Normal-Active);
+    outline-color: var(--SB-Normal-Active);
+}
+
+.btn-color {
+    background-color: var(--SB-Normal);
+}
+
+.btn-color:hover {
+    background-color: var(--SB-Normal-Hover);
+}
+
+.btn-color:active {
+    background-color: var(--SB-Normal-Active);
+}
+
+.btn-type1:disabled {
+    background-color: var(--S300) !important;
+    cursor: default;
+}

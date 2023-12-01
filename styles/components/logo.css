@@ -1,0 +1,22 @@
+.full-logo {
+    height: 1.5em;
+    fill: var(--S0);
+}
+
+.full-logo-ninja-white {
+    transition: opacity 0.5s;
+}
+
+.full-logo-ninja-animated {
+    fill: url(#logo-gradient);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.full-logo:hover .full-logo-ninja-white {
+    opacity: 0;
+}
+
+.full-logo:hover .full-logo-ninja-animated {
+    opacity: 1;
+}
