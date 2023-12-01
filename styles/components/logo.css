@@ -1,5 +1,10 @@
-.full-logo {
+.link-logo {
+    display: inline-block;
     height: 1.5em;
+}
+
+.full-logo {
+    height: 100%;
     fill: var(--S0);
 }
 
