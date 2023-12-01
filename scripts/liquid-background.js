@@ -16,7 +16,5 @@ function setRandomPos(blob, minX, maxX, minY, maxY) {
 
 for (let blob of ANIMATED_BLOBS) {
     setDefaultPos(blob);
-    setInterval(() => {
-        setRandomPos(blob, -400, 400, -400, 400);
-    }, 5000);
+    setInterval(setRandomPos, 5000, blob, -400, 400, -400, 400);
 }
