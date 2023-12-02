@@ -1,0 +1,96 @@
+@import url(nullstyle.css);
+@import url(components.css);
+
+.footer {
+    width: 100%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "logo nav nav sn";
+    padding: 2.5em 4em;
+    background-color: var(--S800);
+}
+
+.footer-logo {
+    grid-area: logo;
+}
+
+.footer-nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.25em;
+}
+
+.footer-link {
+    max-width: 200px;
+    font-size: 1.125em;
+    font-weight: 400;
+    color: var(--S50);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.footer-link:hover {
+    color: var(--S30);
+}
+
+.footer-link:active {
+    color: var(--S0);
+}
+
+.footer-sn {
+    grid-area: sn;
+}
+
+.footer-sn-list {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-creds {
+    display: block;
+    padding: 0.75em 0;
+    font-size: 0.875em;
+    font-weight: 300;
+    color: var(--S200);
+    text-align: center;
+    background-color: var(--S900);
+}
+
+@media (max-width: 1140px) {
+    .footer-content {
+        padding: 2em 2em;
+    }
+}
+
+@media (max-width: 960px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo sn"
+            "nav nav";
+        row-gap: 2.5em;
+    }
+
+    .footer-logo {
+        align-self: center;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "sn"
+            "nav";
+    }
+
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+}
