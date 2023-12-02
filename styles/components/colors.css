@@ -1,5 +1,7 @@
 * {
     --LG-Normal: #A3FFA8;
+    --LG-Normal-Hover: #93E697;
+    --LG-Normal-Active: #82CC86;
     --SB-Normal: #827AE9;
     --SB-Normal-Hover: #756ED2;
     --SB-Normal-Active: #6862BA;
@@ -7,10 +9,14 @@
     --S30: #EBEBED;
     --S50: #C2C2C6;
     --S100: #7B7B83;
+    --S200: #6D6C76;
     --S300: #5E5D68;
+    --S400: #52515C;
     --S500: #43424F;
     --S600: #373643;
     --S650: #2E2D39;
     --S700: #262533;
     --S750: #201F2B;
+    --S800: #171625;
+    --S900: #0B0A1A;
 }
