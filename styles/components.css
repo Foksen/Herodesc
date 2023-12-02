@@ -13,6 +13,18 @@ body {
     background-color: var(--S650);
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 12px !important;
+    }
+}
+
 /* Selects
 
 .select-container {

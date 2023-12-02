@@ -1,0 +1,164 @@
+@import url(nullstyle.css);
+@import url(components.css);
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    padding: 0.75em 3em;
+    width: 100%;
+    height: 5em;
+    background-color: var(--S750);
+}
+
+.header-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+}
+
+.header-link {
+    flex-shrink: 0;
+}
+
+.header-link-icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: var(--S100);
+    transition: fill 0.15s;
+}
+
+.header-link-desc {
+    display: none;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: var(--S50);
+    transition: color 0.15s;
+}
+
+.header-link:hover .header-link-icon {
+    fill: var(--S50);
+}
+
+.header-link:hover .header-link-desc {
+    color: var(--S30);
+}
+
+.header-link:active .header-link-icon {
+    fill: var(--S30);
+}
+
+.header-link:active .header-link-desc {
+    color: var(--S0);
+}
+
+/* close icon */
+
+.header-close-label {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.header-close-icon {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--S50);
+    transition: background-color 0.2s;
+}
+
+.header-close-icon::before, .header-close-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: rotate 0.2s, background-color 0.2s;
+}
+
+.header-close-icon::before {
+    bottom: 0.6em;
+    background-color: var(--S50);
+}
+
+.header-close-icon::after {
+    top: 0.6em;
+    background-color: var(--S50);
+}
+
+.header-close-cb:checked + .header-close-label .header-close-icon {
+    background-color: var(--S650);
+}
+
+.header-close-cb:checked + .header-close-label .header-close-icon::before {
+    top: 0;
+    rotate: 45deg;
+}
+
+.header-close-cb:checked + .header-close-label .header-close-icon::after {
+    top: 0;
+    rotate: -45deg;
+}
+
+.header-close-label:hover .header-close-icon, .header-close-label:hover .header-close-icon::before, .header-close-label:hover .header-close-icon::after {
+    background-color: var(--S30);
+}
+
+.header-close-label:active .header-close-icon, .header-close-label:active .header-close-icon::before, .header-close-label:active .header-close-icon::after {
+    background-color: var(--S0);
+}
+
+.header-hiding {
+    display: inline-block;
+}
+
+@media (max-width: 1280px) {
+    .header {
+        height: auto;
+    }
+
+    .header-search {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: none;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 2em;
+        padding: 1.5em 2em;
+        width: 100%;
+    }
+
+    .header-top-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-link-desc {
+        display: inline-block;
+    }
+
+    .header-link-icon {
+        display: none;
+    }
+
+    .header-close-label {
+        display: flex;
+    }
+}
