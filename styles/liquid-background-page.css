@@ -9,6 +9,7 @@ body {
 .liquid-background-blob-container {
     position: fixed;
     filter: blur(250px);
+    z-index: -999;
 }
 
 #liquid-background-blob-1-container {
