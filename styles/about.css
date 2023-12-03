@@ -1,0 +1,79 @@
+@import url(nullstyle.css);
+@import url(components.css);
+@import url(header.css);
+@import url(footer.css);
+
+.main {
+    padding-top: 0.1px;
+    min-height: 800px;
+    padding-bottom: 6em;
+}
+
+.section-about {
+    /*margin: 3.125em 6.25em 0;*/
+    margin: 3.125em 5% 0;
+}
+
+.about-title {
+    margin-bottom: 0.375em;
+}
+
+.about-desc {
+    margin-bottom: 2.5em;
+    max-width: 39em;
+}
+
+.about-devs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+    column-gap: 1.5em;
+    row-gap: 2em;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 1em;
+    height: 100%;
+    background-color: var(--S700);
+}
+
+.about-card * {
+    overflow-wrap: break-word;
+}
+
+.about-card-img {
+    margin-bottom: 1.5em;
+    width: 11.25em;
+    height: 11.25em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.about-card-title {
+    text-align: center;
+}
+
+.about-card-jobs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.375em;
+    margin-bottom: 1.5em;
+    height: 100%;
+}
+
+.about-card-job {
+    font-size: 1.125em;
+    font-weight: 300;
+    color: var(--S30);
+    text-align: center;
+}
+
+.about-card-sn-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
