@@ -11,7 +11,8 @@
     grid-template-areas: 
         "logo nav nav sn";
     padding: 2.5em 4em;
-    background-color: var(--S800);
+    /*background-color: var(--S800);*/
+    background-color: var(--S700);
 }
 
 .footer-logo {
@@ -58,7 +59,8 @@
     font-weight: 300;
     color: var(--S200);
     text-align: center;
-    background-color: var(--S900);
+    /*background-color: var(--S900);*/
+    background-color: var(--S750);
 }
 
 @media (max-width: 1140px) {
