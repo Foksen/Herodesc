@@ -1,0 +1,133 @@
+@import url(nullstyle.css);
+@import url(components.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(liquid-background-page.css);
+
+.main {
+    margin-bottom: 5em;
+    padding-top: 0.1px;
+    min-height: 960px;
+}
+
+.auth-panel {
+    margin: 4.5em auto 0;
+    padding: 3.125em 2.5em;
+    width: 37.5em;
+    border-radius: 0.375em;
+    background-color: var(--S650);
+}
+
+.auth-panel-logo {
+    display: block;
+    margin: 0 auto 2.5em;
+    height: 1.5em;
+    fill: var(--S0);
+}
+
+.auth-panel-choose-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.auth-panel-choose-label {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--S80);
+    transition: color 0.15s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.auth-panel-choose-label:hover {
+    color: var(--S40);
+}
+
+.auth-panel-choose-rb:checked + .auth-panel-choose-label {
+    color: var(--S0);
+}
+
+.auth-panel-form-inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    margin-bottom: 1.875em;
+}
+
+.panel-sn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.875em;
+    padding: 1.25em 0;
+    border-top: 1px solid var(--S500);
+    border-bottom: 1px solid var(--S500);
+}
+
+.panel-sn-title {
+    margin-bottom: 1em;
+    font-size: 1.125em;
+    font-weight: 300;
+    color: var(--S50);
+}
+
+.panel-sn-list {
+    display: flex;
+    gap: 1em;
+}
+
+.panel-btns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-auth-btn {
+    padding-left: 0;
+    padding-right: 0;
+    width: 11em;
+}
+
+@media (max-width: 768px) {
+    .main {
+        min-height: 850px;
+    }
+
+    .auth-panel {
+        margin: 4.5em 5% 0;
+        padding: 2.5em 1.5em;
+        width: auto;
+    }
+
+    .auth-panel-logo {
+        margin-bottom: 2em;
+        height: 1.25em;
+    }
+
+    .auth-panel-choose-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.625em;
+    }
+
+    .auth-panel-choose-label {
+        font-size: 1.75em;
+    }
+
+    .panel-btns-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1em;
+    }
+
+    .panel-auth-btn {
+        width: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        min-height: 730px;
+    }
+}
