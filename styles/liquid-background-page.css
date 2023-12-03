@@ -2,8 +2,11 @@
 @import url(components.css);
 
 body {
-    background-image: url(../assets/liquid-background/background.jpg);
-    background-size: 100% 100%;
+    background: url(../assets/liquid-background/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .liquid-background-blob-container {
