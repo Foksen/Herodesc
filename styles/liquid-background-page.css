@@ -78,3 +78,9 @@ body {
 .liquid-background-blob-container-animated {
     transition: margin linear 5s;
 }
+
+@media (max-width: 1140px) {
+    .liquid-background-blob-container {
+        display: none;
+    }
+}
