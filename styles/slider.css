@@ -2,9 +2,9 @@
     position: relative;
     display: inline-block;
     width: 600px;
+    width: 100%;
     aspect-ratio: 16/9;
     background-color: var(--S700);
-    border-radius: 0.5em;
     overflow: hidden;
 }
 
