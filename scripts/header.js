@@ -9,26 +9,29 @@ HEADER_CLOSE_CB.onchange = function() {
     }
 };
 
-function displayInlineBlock(elems) {
+function showElems(elems) {
     for (let elem of elems) {
         elem.style.display = "inline-block";
+        elem.style.opacity = 1;
     }
 }
-function displayNone(elems) {
+function hideElems(elems) {
     for (let elem of elems) {
         elem.style.display = "none";
+        elem.style.opacity = 0;
     }
 }
+
 var oldWidth = 1920;
 window.onresize = function() {
     let newWidth = this.innerWidth;
     if (oldWidth <= MAX_HIDING_WIDTH && newWidth > MAX_HIDING_WIDTH) {
         HEADER_CLOSE_CB.checked = true;
-        displayInlineBlock(HEADER_HIDING);
+        showElems(HEADER_HIDING);
     }
     else if (oldWidth > MAX_HIDING_WIDTH && newWidth <= MAX_HIDING_WIDTH) {
         HEADER_CLOSE_CB.checked = false;
-        displayNone(HEADER_HIDING);
+        hideElems(HEADER_HIDING);
     }
     oldWidth = this.innerWidth;
 }

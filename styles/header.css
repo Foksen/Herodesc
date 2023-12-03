@@ -1,8 +1,13 @@
 @import url(nullstyle.css);
 @import url(components.css);
 
+main {
+    margin-top: 80px;
+}
+
 .header {
     position: absolute;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,6 +125,10 @@
 }
 
 @media (max-width: 1280px) {
+    main {
+        margin-top: 81px;
+    }
+
     .header {
         height: auto;
     }
@@ -134,6 +143,10 @@
 }
 
 @media (max-width: 768px) {
+    main {
+        margin-top: 63px;
+    }
+
     .header {
         flex-direction: column;
         justify-content: flex-start;
@@ -160,5 +173,11 @@
 
     .header-close-label {
         display: flex;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        margin-top: 54px;
     }
 }
