@@ -5,11 +5,11 @@ function fadeIn(elem, duration, display) {
         setTimeout(() => {
             elem.style.opacity = 1;
         }, 10);
-        elem.style.display = display || "inline-block";
+        elem.style.display = display ?? "inline-block";
     }
 }
 
-function fadeOut(elem, duration) {
+function fadeOut(elem, duration, display) {
     if (elem.style.display != "none") {
         elem.style.opacity = 1;
         elem.style.transition = `opacity ${duration}ms`;
@@ -17,7 +17,7 @@ function fadeOut(elem, duration) {
             elem.style.opacity = 0;
         }, 10);
         setTimeout(() => {
-            elem.style.display = "none";
+            elem.style.display = display ?? "none";
         }, duration);
     }
 }
