@@ -1,1 +1,180 @@
 @import url(nullstyle.css);
+@import url(components.css);
+@import url(header.css);
+@import url(footer.css);
+
+.main {
+    padding-top: 0.1px;
+    min-height: 880px;
+    padding-bottom: 10em;
+}
+
+.section-search {
+    margin: 2.5em 6.25em 0 7.5em;
+}
+
+.search-input {
+    margin-bottom: 2em;
+    max-width: 44em;
+}
+
+.search-filter-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5em;
+    height: 100%;
+    background-color: var(--S750);
+    z-index: 0;
+    transition: width 0.15s;
+    outline: none;
+    z-index: 1;
+}
+
+.search-filter-label-btn {
+    display: none;
+    margin-bottom: 1.5em;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.search-filter-label-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 3px), -50%);
+    display: inline-block;
+    width: 2.25em;
+    height: 2.25em;
+    cursor: pointer;
+}
+
+.search-filter-icon {
+    width: 100%;
+    height: 100%;
+    stroke: var(--S50);
+    transition: stroke 0.15s;
+}
+
+.search-filter-label-icon:hover .search-filter-icon {
+    stroke: var(--S30);
+}
+
+.search-filter-label-icon:active .search-filter-icon {
+    stroke: var(--S0);
+}
+
+.search-filter-filters-container {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 6.5em;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.search-filter-filters-title {
+    margin-bottom: 1em;
+}
+
+
+.search-heroes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    gap: 1.875em;
+}
+
+.search-hero-card {
+    position: relative;
+    aspect-ratio: 9/16;
+    background-color: var(--S700);
+    transition: box-shadow 0.2s;
+}
+
+.search-hero-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.search-hero-card-views-container, .search-hero-card-likes-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    position: absolute;
+    top: 1.625em;
+    visibility: hidden;
+    opacity: 0;
+    filter: drop-shadow(0 0 5px var(--S900));
+    transition: linear visibility 0.2s, linear opacity 0.2s;
+}
+
+.search-hero-card-views-container {
+    left: 1.125em;
+}
+
+.search-hero-card-likes-container {
+    right: 1.125em;
+}
+
+.search-hero-card-icon {
+    width: 1em;
+    height: 1em;
+    fill: var(--LG-Normal);
+}
+
+.search-hero-card-views-number, .search-hero-card-likes-number {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--S0);
+}
+
+.search-hero-card-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1.625em 0.875em;
+    margin: 0;
+    width: 100%;
+    color: var(--S0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.50) 70%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.search-hero-card:hover {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.50);
+}
+
+.search-hero-card:hover .search-hero-card-views-container, 
+.search-hero-card:hover .search-hero-card-likes-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .section-search {
+        margin: 2.5em 5% 0;
+    }
+
+    .search-input {
+        margin-bottom: 1.5em;
+    }
+
+    .search-filter-label-btn {
+        display: inline-block;
+    }
+
+    .search-filter-label-icon {
+        display: none;
+    }
+
+    .search-filter-panel {
+        width: 0;
+    }
+}
