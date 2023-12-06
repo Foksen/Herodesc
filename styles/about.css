@@ -1,0 +1,82 @@
+@import url(nullstyle.css);
+@import url(components.css);
+@import url(header.css);
+@import url(footer.css);
+
+.main {
+    padding-top: 0.1px;
+    min-height: 800px;
+    padding-bottom: 6em;
+}
+
+.section-about {
+    margin: 7% 10% 0;
+}
+
+.about-title {
+    margin-bottom: 0.5em;
+}
+
+.about-content-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "text" "univesity";
+    align-items: center;
+    column-gap: 10%;
+}
+
+.about-text-container {
+    grid-area: text;
+}
+
+.about-paragraph {
+    margin-bottom: 1.25em;
+}
+
+.about-university-link {
+    grid-template-areas: univesity;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2.5em;
+    height: min-content;
+    background-color: var(--S700);
+    text-decoration: none;
+    border-radius: 0.25em;
+}
+
+.about-university-desc {
+    font-size: 1.125em;
+    color: var(--S50);
+    text-align: center;
+    transition: color 0.15s;
+}
+
+.about-university-link:hover .about-university-desc {
+    color: var(--S30);
+}
+
+.about-university-link:active .about-university-desc {
+    color: var(--S0);
+}
+
+.about-univesity-img {
+    display: inline-block;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .section-about {
+        margin: 3.125em 5% 0;
+    }
+
+    .about-content-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "text" 
+            "univesity";
+        column-gap: 0;
+        row-gap: 2em;
+    }
+}
