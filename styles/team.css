@@ -9,28 +9,28 @@
     padding-bottom: 6em;
 }
 
-.section-about {
+.section-team {
     /*margin: 3.125em 6.25em 0;*/
     margin: 3.125em 5% 0;
 }
 
-.about-title {
+.team-title {
     margin-bottom: 0.375em;
 }
 
-.about-desc {
+.team-desc {
     margin-bottom: 2.5em;
     max-width: 39em;
 }
 
-.about-devs-container {
+.team-devs-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
     column-gap: 1.5em;
     row-gap: 2em;
 }
 
-.about-card {
+.team-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,11 +39,11 @@
     background-color: var(--S700);
 }
 
-.about-card * {
+.team-card * {
     overflow-wrap: break-word;
 }
 
-.about-card-img {
+.team-card-img {
     margin-bottom: 1.5em;
     width: 11.25em;
     height: 11.25em;
@@ -52,11 +52,11 @@
     border-radius: 100%;
 }
 
-.about-card-title {
+.team-card-title {
     text-align: center;
 }
 
-.about-card-jobs-container {
+.team-card-jobs-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,14 +65,14 @@
     height: 100%;
 }
 
-.about-card-job {
+.team-card-job {
     font-size: 1.125em;
     font-weight: 300;
     color: var(--S30);
     text-align: center;
 }
 
-.about-card-sn-list {
+.team-card-sn-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
